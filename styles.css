@@ -65,17 +65,9 @@ p {
     color: #6e6e6e;
 }
 
-svg:nth-child(3) {
-    display:block;
-}
-
 #a1 svg{
     animation: ballfloat 3s ease-in-out 0s infinite normal forwards;
 }
-
-#accueil > svg:nth-child(2) > path:nth-child(2) {
-    display: none;
-   }
    
 
 @keyframes ballfloat {
@@ -105,7 +97,7 @@ svg:nth-child(3) {
     font-size: 140px;
     font-weight:300;
     font-style:italic;
-    color: #dd3737;
+    color: #e35042;
     position: relative;
     left: -98px;
     top: 70px;
@@ -133,7 +125,7 @@ svg:nth-child(3) {
 }
 
 #accueil > h1:nth-child(4) > span:nth-child(1)  {
-    color: #dd3737;
+    color: #e35042;
     font-size: 80px;
     font-weight: 600;
     font-style: italic;
@@ -151,6 +143,9 @@ svg:nth-child(3) {
 /* Desktops and laptops ----------- */
 @media only screen 
 and (min-width : 1224px) {
+
+
+/* SIDEBAR */
 
     header {
         display: flex;
@@ -193,9 +188,11 @@ and (min-width : 1224px) {
     }
 
     nav a:hover {
-        color: #dd3737;
+        color: #e35042;
         transition: 0.3s;
     }
+
+/* ACCUEIL */
 
     #accueil {
         position: absolute;
@@ -214,6 +211,8 @@ and (min-width : 1224px) {
         margin: 0;
     }
 
+/* ACCUEILGAUCHE */
+
     #a1 {
         position: absolute;
         left: 0;
@@ -226,6 +225,34 @@ and (min-width : 1224px) {
         justify-content: space-around;
         align-items: center ;
     }
+
+    #logo {
+        display: flex;;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #logo h2 {
+        font-style: italic;
+        color: #e35042;
+        font-weight: 350;
+        font-size: 5em;
+        position: absolute;
+        top: 70%;
+        width: auto;
+        height: 20%;
+        left: 15%;
+    }
+
+    #logo h2:nth-child(2) {
+        color: black;
+        font-style: normal;
+        font-weight: 500;
+        left: 29.5%;
+        top: 75%;
+    }
+
+/* ACCUEILDROITE */
 
     #a2 {
         position:absolute;
@@ -253,11 +280,25 @@ and (min-width : 1224px) {
         position: relative;
         font-weight: 400;
         font-size: 8em;
+        transition: 1.5s;
+    }
+
+    #aLiens h1:hover {
+        text-decoration: none;
+        color: #e35042;
+        transition: 0.2s;
     }
 
     #aLiens a {
         text-decoration: none;
     }
+
+
+    #aLiens h1 span:hover {
+        text-decoration: none;
+        color: #e35042;
+    }
+    
 
     #aLiens h1 span {
         top: 0;
@@ -279,31 +320,58 @@ and (min-width : 1224px) {
         font-style: italic;
     }
 
+    /* À PROPOS */
 
-    #logo {
-        display: flex;;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #logo h2 {
-        font-style: italic;
-        color: #e35042;
-        font-weight: 350;
-        font-size: 5em;
+    #aP {
         position: absolute;
-        top: 70%;
-        width: auto;
-        height: 20%;
-        left: 15%;
+        left: 100vw;
+        top: 0;
+        height: 100vh;
+        width: 80vw;
+        background-color: #e35042;
     }
 
-    #logo h2:nth-child(2) {
-        color: black;
-        font-style: normal;
-        font-weight: 500;
-        left: 29.5%;
-        top: 75%;
+    /* APROPOSGAUCHE */
+
+    #aP1 {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 50%;
+            height:100vh;
+            border-right: solid 1px white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center ;
+        }
+
+    #aP1 h3 {
+        top: 5%;
+        left: 5%;
+        font-size: 1.5em;
+        color: white;
+        position: absolute;
+    }
+
+    #aP1 #sec1 {
+        width: 50%;
+        height: 100%;
+        left: 25%;
+    }
+
+    /* APROPOSDROITE */
+
+    #aP2 {
+        position:absolute;
+        left: 50%;
+        top: 0;
+        height: 100vh;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: flex-start;
     }
 
 
