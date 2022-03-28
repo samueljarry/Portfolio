@@ -1,3 +1,5 @@
+if(window.innerWidth > 768){
+
 // !!! HORIZONTAL INFINITE SCROLL !!! //
 
 let sliderWrap = document.querySelector('#slider-ext');
@@ -37,8 +39,8 @@ function getScrollPos(){
 function scrollUpdate(){
 
     // RETIRER LES COMMENTS POUR DESACTIVER LE PARALLAX SUR MOBILE
-  //  if(window.innerWidth > 760){
-  //  sliderWrap.style.overflow = 'hidden';
+  //  if(window.innerWidth > 768){ //
+  // sliderWrap.style.overflow = 'hidden'; //
     scrollPos = getScrollPos();
     if(clonesWidth + scrollPos >= sliderWidth){
         window.scrollTo({top: 1});
@@ -49,9 +51,9 @@ function scrollUpdate(){
     slider.style.transform = `translateX(${-window.scrollY}px)`
 
     requestAnimationFrame(scrollUpdate)
-   // }
-   //     else {
-   //         sliderWrap.style.overflow = 'scroll';
+  //  } //
+  //      else { //
+   //         sliderWrap.style.overflow = 'scroll'; //
    // }
 }
 
@@ -72,3 +74,8 @@ function calculateDimensions(){
 }
 
 onLoad()
+
+}
+
+// SCROLL REVEAL
+

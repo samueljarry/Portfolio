@@ -13,6 +13,172 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+header {
+    display:none;
+}
+
+p {
+    font-size: 45px;
+    font-weight: 100;
+    width: 75vw;
+    position: relative;
+    left: 7vw;
+    color: #6e6e6e;
+}
+
+#a1 svg{
+    animation: ballfloat 3s ease-in-out 0s infinite normal forwards;
+}
+
+#accueil {
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 200vh;
+    width: 100vw;
+    align-items: center;
+}
+
+#accueil h1 {
+    position: absolute;
+    font-style:normal;
+    color: black;
+    font-weight: 700;
+    font-size: 1vw;
+    margin: 0;
+}
+
+/* ACCUEILGAUCHE */
+
+#a1 {
+    position: absolute;
+    left: 0vw;
+    top: 0vh;
+    width: 100vw;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center ;
+}
+
+#logo {
+    display: flex;;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo h2 {
+    font-style: italic;
+    color: #e35042;
+    font-weight: 350;
+    font-size: 5em;
+    position: absolute;
+    top: 70%;
+    width: auto;
+    height: 20%;
+    left: 15%;
+}
+
+#logo h2:nth-child(2) {
+    color: black;
+    font-style: normal;
+    font-weight: 500;
+    left: 29.5%;
+    top: 75%;
+}
+
+/* ACCUEILDROITE */
+
+#a2 {
+    display:none;
+}
+
+   /* À PROPOS */
+
+   #aP {
+    position: absolute;
+    left: 0vw;
+    top: 100vh;
+    height: 160vh;
+    width: 100vw;
+    background-color: #e35042;
+}
+
+/* APROPOSGAUCHE */
+
+#aP1 {
+        position: absolute;
+        left: 0vw;
+        top: 0vh;
+        width: 100%;
+        height:75vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center ;
+    }
+
+#aP1 h3 {
+    top: 5%;
+    left: 5%;
+    font-size: 1.5em;
+    color: white;
+    position: absolute;
+}
+
+#aP1 #sec1 {
+    width: 50%;
+    height: 100%;
+    left: 25%;
+}
+
+/* APROPOSDROITE */
+
+#aP2 {
+    position:absolute;
+    left: 0%;
+    top: 50%;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+}
+
+#aP2 h2 {
+    font-weight: 700;
+    width: 90%;
+    color: white;
+    font-size: 4em;
+    left:5%;
+    top: 5%;
+    position:absolute;
+}
+
+#aP2 h2 span {
+    font-weight: ;
+    font-style: italic;
+}
+
+#aP2 p {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 600;
+    width: 90%;
+    color: white;
+    font-size: 1.3em;
+    left:5%;
+    top: 20%;
+}
+
+/* Desktops and laptops ----------- */
+
+@media only screen 
+and (min-width : 1224px) {
+
+
 #slider-ext {
     position: fixed;
     top: 0%;
@@ -51,98 +217,6 @@ body::-webkit-scrollbar {
     background-position: center;
 }
 
-
-header {
-    display:none;
-}
-
-p {
-    font-size: 45px;
-    font-weight: 100;
-    width: 75vw;
-    position: relative;
-    left: 7vw;
-    color: #6e6e6e;
-}
-
-#a1 svg{
-    animation: ballfloat 3s ease-in-out 0s infinite normal forwards;
-}
-   
-
-@keyframes ballfloat {
-    0% {
-      transform: translateY(0);
-    }
-  
-    50% {
-      transform: translateY(-30px);
-    }
-
-    100% {
-        transform: translateY(0px);
-      }
-  }
-
-
-#accueil {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#accueil h1 {
-    font-size: 140px;
-    font-weight:300;
-    font-style:italic;
-    color: #e35042;
-    position: relative;
-    left: -98px;
-    top: 70px;
-    margin-bottom: 12vh;
-}
-
-#accueil h1 span{
-    font-size: 140px;
-    font-weight:500;
-    font-style: normal;
-    color: black;
-    position: relative;
-    top: 80px;
-    left: -118px;
-    z-index: -1;
-}
-
-#accueil h1:nth-child(4) {
-    font-size: 80px;
-    font-weight:600;
-    font-style: italic;
-    color: black;
-    top: 12vh;
-    left: 140px;
-}
-
-#accueil > h1:nth-child(4) > span:nth-child(1)  {
-    color: #e35042;
-    font-size: 80px;
-    font-weight: 600;
-    font-style: italic;
-    top: 0px;
-    left: 0px;
-}
-
-#ellipse {
-    animation: none;
-    top: 90px;
-        left: 27px;
-    position: absolute;
-}
-
-/* Desktops and laptops ----------- */
-@media only screen 
-and (min-width : 1224px) {
 
 
 /* SIDEBAR */
@@ -195,11 +269,13 @@ and (min-width : 1224px) {
 /* ACCUEIL */
 
     #accueil {
+        display: flex;
         position: absolute;
-        left: 0;
-        top: 0;
+        left: 0vw;
+        top: 0vh;
         height: 100vh;
         width: 100vw;
+        align-items: center;
     }
 
     #accueil h1 {
@@ -215,8 +291,8 @@ and (min-width : 1224px) {
 
     #a1 {
         position: absolute;
-        left: 0;
-        top: 0;
+        left: 0vw;
+        top: 0vh;
         width: 50vw;
         height:100vh;
         border-right: solid 1px;
@@ -257,7 +333,7 @@ and (min-width : 1224px) {
     #a2 {
         position:absolute;
         left: 50%;
-        top: 0;
+        top: 0vh;
         height: 100vh;
         width: 50vw;
         display: flex;
@@ -271,12 +347,13 @@ and (min-width : 1224px) {
         height: 80%;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: center;
     }
 
     #aLiens h1 {
         height: 20%;
         left: 10%;
+        top: 40%;
         position: relative;
         font-weight: 400;
         font-size: 8em;
@@ -296,16 +373,20 @@ and (min-width : 1224px) {
 
     #aLiens h1 span:hover {
         text-decoration: none;
-        color: #e35042;
+        color: black;
     }
     
+    #aLiens h1:hover span {
+        color: black;
+    }
 
     #aLiens h1 span {
-        top: 0;
+        top: 0vh;
         font-size: 5rem;
         left: auto;
         font-style: italic;
         font-weight: 290;
+        color: black;
     }
 
     #aCs h1 {
@@ -325,7 +406,7 @@ and (min-width : 1224px) {
     #aP {
         position: absolute;
         left: 100vw;
-        top: 0;
+        top: 0vh;
         height: 100vh;
         width: 80vw;
         background-color: #e35042;
@@ -335,11 +416,10 @@ and (min-width : 1224px) {
 
     #aP1 {
             position: absolute;
-            left: 0;
-            top: 0;
+            left: 0vw;
+            top: 0vh;
             width: 50%;
             height:100vh;
-            border-right: solid 1px white;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
@@ -374,20 +454,51 @@ and (min-width : 1224px) {
         align-items: flex-start;
     }
 
+    #aP2 h2 {
+
+        font-weight: 700;
+        width: 75%;
+        color: white;
+        font-size: 4em;
+        left:12.5%;
+        top: 5%;
+        position:absolute;
+    }
+
+    #aP2 h2 span {
+        font-weight: ;
+        font-style: italic;
+    }
+
+    #aP2 p {
+        font-family: neue-haas-grotesk-display, sans-serif;
+        font-weight: 600;
+        width: 75%;
+        font-size: 1.3em;
+        left:12.5%;
+        top: 20%;
+    }
 
 
-    @keyframes ballfloat {
-        0% {
-          transform: translateY(0);
-        }
-      
-        50% {
-          transform: translateY(-15px);
-        }
-    
-        100% {
-            transform: translateY(0px);
-          }
-      }
+
+
 
 }
+
+
+
+/* ANIMATIONS */
+
+@keyframes ballfloat {
+    0% {
+      transform: translateY(0);
+    }
+  
+    50% {
+      transform: translateY(-30px);
+    }
+
+    100% {
+        transform: translateY(0px);
+      }
+  }
