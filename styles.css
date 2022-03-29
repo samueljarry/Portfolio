@@ -173,6 +173,35 @@ p {
     top: 20%;
 }
 
+/* DEV */
+
+#projet {
+    position: absolute;
+    left: 0vw;
+    top: 260vh;
+    height: 100vh;
+    width: 100vw;
+    background: white;
+
+}
+
+/* DEV GAUCHE */
+
+#d1 {
+    position : absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#d1 .secTitle {
+    color: #e35042;
+}
+
 /* Desktops and laptops ----------- */
 
 @media only screen 
@@ -193,7 +222,7 @@ and (min-width : 1224px) {
     top: 0;
     left:0;
     height: 100%;
-    width:10000px;
+    width:800vw;
     display: flex;
     will-change: transform;
     background-color: white;
@@ -222,25 +251,25 @@ and (min-width : 1224px) {
 /* SIDEBAR */
 
     header {
-        display: flex;
         justify-content: center;
         align-items: center;
-        width: 3vw;
         height: 100vh;
         left: 0;
         position: fixed;
         top: 0;
         display: block;
         z-index: 100;
+        background: white;
     }
 
     nav {
+        width: 3vw;
         height: 100vh;
         color: black;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background: white;
+        transition: 0.5s ease;
         z-index: 101;
     }
 
@@ -263,9 +292,23 @@ and (min-width : 1224px) {
 
     nav a:hover {
         color: #e35042;
-        transition: 0.3s;
+        transition: 0.3s ease;
     }
 
+    #sidebar.scroll {
+       background-color: #e35042;
+       transition:  0.5s ease;
+    }
+
+    #sidebar.scroll a{
+        color : white;
+        transition:  0.5s ease;
+     }
+
+     #sidebar.scroll a:hover{
+        color : black;
+        transition:  0.3s ease;
+     }
 /* ACCUEIL */
 
     #accueil {
@@ -295,7 +338,6 @@ and (min-width : 1224px) {
         top: 0vh;
         width: 50vw;
         height:100vh;
-        border-right: solid 1px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -363,7 +405,7 @@ and (min-width : 1224px) {
     #aLiens h1:hover {
         text-decoration: none;
         color: #e35042;
-        transition: 0.2s;
+        transition: 0.2s ease-in-out;
     }
 
     #aLiens a {
@@ -426,7 +468,7 @@ and (min-width : 1224px) {
             align-items: center ;
         }
 
-    #aP1 h3 {
+    .secTitle {
         top: 5%;
         left: 5%;
         font-size: 1.5em;
@@ -480,6 +522,66 @@ and (min-width : 1224px) {
     }
 
 
+    /* DEVELOPPEMENT */
+
+    #projet {
+        position: absolute;
+        left: 180vw;
+        top: 0vh;
+        height: 100vh;
+        width: 80vw;
+        background: white;
+
+    }
+
+    /* DEV GAUCHE */
+
+    #d1 {
+        position : absolute;
+        left: 0;
+        top: 0;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #d1 .secTitle {
+        color: #e35042;
+    }
+
+    /* DEV DROITE */
+
+    #d2 {
+        position : absolute;
+        left: 50%;
+        top: 0;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #d2 input {
+        cursor:pointer;
+        background:none;
+        border:none;
+    }
+
+ #site1 {
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background: #e35042;
+     
+    }
 
 
 
@@ -488,6 +590,34 @@ and (min-width : 1224px) {
 
 
 /* ANIMATIONS */
+
+@keyframes myAnim {
+    0% {
+      opacity: 0;
+      transform: rotateX(70deg);
+      transform-origin: top;
+    }
+  
+    100% {
+      opacity: 1;
+      transform: rotateX(0deg);
+      transform-origin: top;
+    }
+  }
+
+  @keyframes myAnim1 {
+    0% {
+      opacity: 0;
+      transform: rotateX(70deg);
+      transform-origin: top;
+    }
+  
+    100% {
+      opacity: 1;
+      transform: rotateX(0deg);
+      transform-origin: top;
+    }
+  }
 
 @keyframes ballfloat {
     0% {

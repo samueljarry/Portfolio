@@ -77,5 +77,57 @@ onLoad()
 
 }
 
-// SCROLL REVEAL
+function show() {
+    document.getElementById('test').classList.toggle('active');
+    }
+
+    function showDiv() {
+        document.getElementById('site1').classList.toggle('active');
+        document.getElementById('site1').style.display = "block";
+        document.getElementById("site1").animate([
+            // étapes/keyframes
+            { transform: 'translateY(-100vh)' },
+            { transform: 'translateY(0vh)' }
+          ], {
+            // temporisation
+            duration: 450,
+            fill: "forwards",
+            easing: "ease-in-out"
+          });
+          
+     }
+
+     function closeDiv() {
+        document.getElementById('site1').classList.toggle('disabled');
+        document.getElementById("site1").animate([
+            // étapes/keyframes
+            { transform: 'translateY(0vh)' },
+            { transform: 'translateY(-100vh)' }
+          ], {
+            // temporisation
+            duration: 450,
+            fill: "forwards",
+            easing: "ease-in-out"
+          });
+
+}
+
+// NAVBAR COLOR
+
+let Hauteur = window.innerHeight;
+let Largeur = 0.97 * window.innerWidth;
+let Largeur1 = 1.77 * window.innerWidth;
+
+// console.log(viewportHeight, Largeur);
+
+window.onscroll = function() {
+    var nav = document.getElementById('sidebar');
+    if ( window.pageYOffset > Largeur ) {
+        nav.classList.add("scroll");
+    } else {
+        nav.classList.remove("scroll");
+    } if ( window.pageYOffset > Largeur1 ) {
+        nav.classList.remove("scroll");
+}
+}
 

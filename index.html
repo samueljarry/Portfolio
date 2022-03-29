@@ -3,6 +3,8 @@
 <head>
     <meta name="viewport" content= "width=device-width, user-scalable=no">
     
+
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://use.typekit.net/hen3esu.css">
     <meta charset="UTF-8">
@@ -13,7 +15,7 @@
 <body>
 
 <header>
-    <nav>
+    <nav id="sidebar">
         <a href="#dev">Dév</a>
         <a href="#cs">CySec</a>
         <a href="#osint">OSINT</a>
@@ -75,15 +77,15 @@
 
                     <section id="aP">
                       <section id="aP1">
-                        <h3>À propos</h3>
+                        <h3 class=secTitle>À propos</h3>
 
-                        <svg 
-                            xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                            width="169px" height="538px">
-                            <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
-                            d="M0.910,530.649 L0.910,537.975 L168.676,537.975 L168.676,530.649 C146.698,530.649 115.196,526.253 115.196,469.110 L115.196,0.244 L6.771,76.435 L18.492,88.157 C25.86,83.28 36.807,72.772 46.331,72.772 C51.459,72.772 55.122,76.435 55.122,80.830 L55.122,469.110 C55.122,526.253 22.155,530.649 0.910,530.649 Z"/>
-                        </svg>
+                        <div id="aPsvg">
+                            <svg 
+                              width="151px" height="481px">
+                              <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+                              d="M0.829,473.690 L0.829,480.229 L150.573,480.229 L150.573,473.690 C130.956,473.690 102.838,469.766 102.838,418.762 L102.838,0.263 L6.60,68.269 L16.522,78.731 C22.408,74.154 32.870,64.999 41.371,64.999 C45.948,64.999 49.218,68.269 49.218,72.192 L49.218,418.762 C49.218,469.766 19.792,473.690 0.829,473.690 Z"/>
+                          </svg>
+                        </div>
                       </section>
 
                       <section id="aP2">
@@ -91,10 +93,28 @@
                           <p>	Je suis étudiant en 2ème semestre de BUT MMI<br>
                             Vous pouvez retrouver sur ce portfolio mes différents projets dont ce site fait partie.<br>
                       </section>
-
                     </section>
 
+                    <section id="projet">
+                        <section id="d1">
+                            <h3 class="secTitle">Mes projets</h3>
 
+                            <svg 
+                              width="300px" height="489px">
+                            <path fill-rule="evenodd"  fill="rgb(227, 80, 66)"
+                              d="M14.676,443.455 C14.676,344.716 299.124,287.172 299.124,112.579 C299.124,43.919 245.504,0.762 157.881,0.108 C93.798,0.108 36.908,26.264 12.60,86.423 L61.103,86.423 C76.143,34.765 112.761,12.532 157.881,12.532 C220.656,12.532 241.581,53.74 241.581,112.579 C241.581,270.171 0.290,352.563 0.290,443.455 L0.290,488.575 L299.124,488.575 L299.124,395.720 L292.585,395.720 C292.585,415.337 288.662,443.455 237.657,443.455 L14.676,443.455 Z"/>
+                          </svg>
+                        </section>
+                        <section id="d2">
+                         
+                          <input type="button" name="answer" value="La Source" onclick="showDiv(); anime()" />
+
+                        </section>
+                    </section>
+                    
+                    
+
+     
 
                 </div>
             </div>
@@ -102,8 +122,19 @@
         </div>
     </div>
 
+    
+    <div id="site1" style="display:none;" class="">
+      <svg 
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      width="12px" height="12px">
+      <path fill-rule="evenodd"  fill="rgb(227, 80, 66)"
+      d="M11.558,10.426 L10.446,11.538 L5.999,7.92 L1.553,11.538 L0.441,10.426 L4.888,5.980 L0.441,1.533 L1.553,0.422 L5.999,4.868 L10.446,0.422 L11.558,1.533 L7.111,5.980 L11.558,10.426 Z"/>
+</svg>
+      <input type="button" name="answer" value="X" onclick="closeDiv()" />
+    </div>
 
-    <script src="scripts.js"></script>
+    <script src="js/scripts.js"></script>
    
 </body>
 </html>
