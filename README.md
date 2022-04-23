@@ -1,1 +1,4 @@
 # portfolio
+
+ignore :
+ - images/
