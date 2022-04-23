@@ -76,7 +76,7 @@ function calculateDimensions(){
 onLoad()
 
 }
-if(window.innerWidth < 1227){ // SCROLL TO VERSION MOBILE
+if(window.innerWidth < 1000){ // SCROLL TO VERSION MOBILE
   
   function scrollD1() {
     window.scrollTo({
