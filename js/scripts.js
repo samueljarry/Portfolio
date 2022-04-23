@@ -78,7 +78,6 @@ onLoad()
 }
 if(window.innerWidth < 768){ // SCROLL TO VERSION MOBILE
   
-  
   function scrollD1() {
     window.scrollTo({
       top: 3.6 * window.innerHeight,
@@ -92,9 +91,10 @@ if(window.innerWidth < 768){ // SCROLL TO VERSION MOBILE
       right: 0
     });
   }
-  }
 
-if(window.innerWidth > 768){ // SCROLL TO VERSION DESKTOP
+}
+
+if(window.innerWidth > 1227){ // SCROLL TO VERSION DESKTOP
 function scrollA() {
   window.scrollTo({
     top: 0,
