@@ -76,25 +76,8 @@ function calculateDimensions(){
 onLoad()
 
 }
-if(window.innerWidth < 1000){ // SCROLL TO VERSION MOBILE
-  
-  function scrollD1() {
-    window.scrollTo({
-      top: 3.6 * window.innerHeight,
-      left: 0
-    });
-  }
-  
-  function scrollC1() {
-    window.scrollTo({
-      top: 5.6 * window.innerHeight,
-      left: 0
-    });
-  }
 
-}
-
-if(window.innerWidth > 1227){ // SCROLL TO VERSION DESKTOP
+if(window.innerWidth > 980){ // SCROLL TO VERSION DESKTOP
 function scrollA() {
   window.scrollTo({
     top: 0,
@@ -135,6 +118,20 @@ function scrollC1() {
     right: 0
   });
 }
+} else {
+  function scrollD1() {
+    window.scrollTo({
+      top: 3.6 * window.innerHeight,
+      left: 0
+    });
+  }
+  
+  function scrollC1() {
+    window.scrollTo({
+      top: 5.6 * window.innerHeight,
+      left: 0
+    });
+  }
 }
 
 
