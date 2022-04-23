@@ -81,14 +81,14 @@ if(window.innerWidth < 1000){ // SCROLL TO VERSION MOBILE
   function scrollD1() {
     window.scrollTo({
       top: 3.6 * window.innerHeight,
-      right: 0
+      left: 0
     });
   }
   
   function scrollC1() {
     window.scrollTo({
       top: 5.6 * window.innerHeight,
-      right: 0
+      left: 0
     });
   }
 
