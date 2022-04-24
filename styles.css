@@ -178,6 +178,20 @@ p {
     top: 20%;
 }
 
+#reseaux {
+    width: 50%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    top: 65%;
+    left: 25%;
+    justify-content: space-around;
+}
+
+#reseaux a {
+    width: 30%;
+}
+
 /* DEV */
 
 #projet {
@@ -829,7 +843,16 @@ and (min-width : 1224px) {
         left:12.5%;
         top: 20%;
     }
+    #reseaux {
+    width: 50%;
+    height: 20%;
+    top: 75%;
+    left: 25%;
+    }
 
+    #reseaux a {
+        width: 20%;
+    }
 
     /* DEVELOPPEMENT */
 
