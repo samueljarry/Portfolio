@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <script src="js/scrollreveal.min.js"></script>
 
@@ -23,7 +23,7 @@
         <p onclick="scrollD()">Dév</p>
         <p onclick="scrollC()">CySec</p>
         <p>OSINT</p>
-        <p>Contact</p>
+        <a href="mailto:samueljarry.sj@gmail.com">Contact</a>
     </nav>
 </header>
     
@@ -66,15 +66,11 @@
                         <section id="a2">
                             <div id="aLiens">
                                 <div id="aDev"><h1 class="magic-hover" onclick="scrollD()">Dév<span class="magic-hover" onclick="scrollD()">eloppement</span></h1></div>
-                                <div id="aCs"><h1 class="magic-hover" onclick="scrollC()">Cyb<span class="magic-hover" onclick="scrollD()">ersécurité</span></h1></div>
-                                <div id="aOs"><h1 class="magic-hover">OSINT</h1></div>
-                                <div id="aCo"><h1 class="magic-hover">Contact</h1></div>
+                                <div id="aCs"><h1 class="magic-hover" onclick="scrollC()">Cyber<span class="magic-hover" onclick="scrollD()">sécurité</span></h1></div>
+                                <div id="aOs"><h1>OSINT</h1></div>
+                                <div id="aCo"><a href="mailto:samueljarry.sj@gmail.com"><h1 class="magic-hover">Contact</h1></a></div>
                             </div>
                         </section>
-
-                        <div id="accueilLogo">
-                           <!-- <h1>Samuel <span>Jarry</span></h1> --> 
-                        </div>
                         
                     </section>
 
@@ -94,7 +90,7 @@
                       <section id="aP2">
                         <h2>Qui suis-<span>je ?</span></h2>
                           <p>	Moi c’est Samuel ou Sam, je suis un étudiant en BUT MMI à l’IUT de Troyes qui voulait faire une école de cinéma avant de découvrir le développement web cette année.
-                            Ayant grandi avec une mère styliste, un père artiste et un grand frère en école supérieure de création digitale j’ai toujours baigné dans un environnement créatif, que j’essaie de prolonger à ma manière dans le monde du développement.
+                            Avec une mère styliste, un père artiste et un grand frère actuellement en école supérieure de création digitale j’ai toujours baigné dans un environnement créatif, que j’essaie de prolonger dans le développement.
                             Curieux et autonome de nature, je m'intéresse à d'autres domaines informatique en dehors de ma formation avec l'OSINT et la Cybersécurité.<br>
                             <div id="reseaux">
                               <a href="https://www.linkedin.com/in/samuel-jarry-750229231/" class="magic-hover" target="_blank">
@@ -103,6 +99,7 @@
                               <a href="https://github.com/samueljarry" class="magic-hover" target="_blank">
                                 <img src="images/github.svg" alt="logo github">
                               </a>
+                              <a href="./images/CV2022.jpg" class="magic-hover" target="_blank">CV</a>
                             </div>
                       </section>
                     </section>
@@ -153,9 +150,9 @@
                             
                             <div class="divider" id="dev"></div>
 
-                            <button name="answer" class="magic-hover" onclick="showCrypto()" >Crypto<span>graphie</span></button>
+                           
 
-                            <div class="divider"></div>
+                          
 
                             <button name="answer" class="magic-hover" onclick="showKey()" >Key<span>logger</span></button>
 
@@ -178,7 +175,7 @@
 
 <section id="reveal">
     
-    <div id="lasource">
+    <aside id="lasource">
       <input class="close magic-hover" type="image" src="images/close.svg" onclick="closeSource(); scrollD1();" />
       <div class="prespro">
         <video autoplay muted preload="auto" crossorigin="anonymous" loop="loop" src="images/lasource.mp4"></video>
@@ -192,9 +189,9 @@
             <a class="no-cursor" href="https://mmi21c10.mmi-troyes.fr/lasource/lasource.php" target="_blank">Visiter le site</a>
            </p>
       </article>
-    </div>
+    </aside>
 
-    <div id="eclothing">
+    <aside id="eclothing">
       <input class="close magic-hover" type="image" src="images/close.svg" onclick="closeEclo(); scrollD1();" />
       <div class="prespro">
         <video autoplay muted preload="auto" crossorigin="anonymous" loop="loop" src="images/eclothing.mp4"></video>
@@ -205,11 +202,10 @@
           <br>Il dispose d'un CRUD pour la gestion des articles mais aussi d'un formulaire de recherche avec 6 filtres qui fonctionnent entre eux <br> 
           <a class="no-cursor" href="https://mmi21c10.sae203.ovh/index.php" target="_blank">Visiter le site</a>
          </p>
-    </article>
       </article>
-    </div>
+    </aside>
 
-    <div id="portfolio">
+    <aside id="portfolio">
       <input class="close magic-hover" type="image" src="images/close.svg" onclick="closePort(); scrollD1();" />
       <div class="prespro">
         <video autoplay muted preload="auto" crossorigin="anonymous" loop="loop" src="images/portfolio.mp4"></video>
@@ -220,11 +216,10 @@
           <br>Comme MagicMouseJS que j'ai légèrement modifié pour le curseur et ScrollRevealJS pour la version mobile du site pour l'apparition des éléments au scroll, il est disponible en Open Source ci dessous
           <a class="no-cursor" href="https://github.com/samueljarry/Portfolio" target="_blank">Voir le repository GitHub</a>
         </p>
-    </article>
       </article>
-    </div>
+    </aside>
 
-    <div id="thm">
+    <aside id="thm">
       <input class="close magic-hover" type="image" src="images/close.svg" onclick="closeThm(); scrollC1();" />
       <div class="prespro">
         <img src="images/tryhackme.png" alt="logo tryhackme">
@@ -235,35 +230,20 @@
           <br> La section badge sur mon profil vous permet de voir les compétences que j'ai validé sur la plateforme
           <a class="no-cursor" href="https://tryhackme.com/p/ERRR" target="_blank">Voir mon profil</a>
          </p>
-    </article>
-      </article>
-    </div>
+        </aside>
+    </section>
 
-    <div id="crypto">
-      <input class="close magic-hover" type="image" src="images/close.svg" onclick="closeCrypto(); scrollC1();" />
-      <div class="prespro">
-        <img src="images/crypto.png" alt="extrait de code python">
-      </div>
-      <article class="justification">
-        <h2>Cryptographie</h2>
-        <p>J'ai réalisé un script simple en Python permettant d'encoder et décrypter des messages
-         </p>
-    </article>
-      </article>
-    </div>
-
-    <div id="keylogger">
+    <aside id="keylogger">
       <input class="close magic-hover" type="image" src="images/close.svg" onclick="closeKey(); scrollC1();" />
       <div class="prespro">
-        <img src="images/crypto.png" alt="extrait de code python">
+        <img src="images/keylogger.png" alt="extrait de code python">
       </div>
       <article class="justification">
         <h2>Keylogger</h2>
         <p>Un keylogger est un programme qui enregistre toutes les touches appuyées sur un clavier chronologiquement et peut être utilisé pour récupérer les identifiants d'un ordinateur infecté, je l'ai réalisé en Python avec la librarie PynPut
          </p>
     </article>
-      </article>
-    </div>
+  </aside>
 
 
   </section>
@@ -283,6 +263,6 @@
         sr.reveal('.divider');
       }
     </script>
-   
+
 </body>
 </html>

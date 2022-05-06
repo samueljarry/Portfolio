@@ -2,7 +2,6 @@ if(window.innerWidth > 768){
 
 // !!! HORIZONTAL INFINITE SCROLL !!! //
 
-let sliderWrap = document.querySelector('#slider-ext');
 let slider = document.querySelector('#slider');
 let clonesWidth;
 let sliderWidth;
@@ -11,7 +10,6 @@ let disableScroll = false;
 let scrollPos;
 
 let items = [...document.querySelectorAll('.slider-section')];
-let images = [...document.querySelectorAll('.section-img')];
 
 //images.forEach((images, idx) => {
 //    images.style.backgroundImage = `url(./images/${idx+1}.jpg)`
@@ -89,7 +87,7 @@ function scrollA() {
 
 function scrollD() {
   window.scrollTo({
-    top: 1.78 * window.innerWidth,
+    top: 1.98 * window.innerWidth,
     right: 0,
     behavior: "smooth",
     easing : "ease-in"
@@ -98,14 +96,14 @@ function scrollD() {
 
 function scrollD1() {
   window.scrollTo({
-    top: 1.78 * window.innerWidth,
+    top: 1.98 * window.innerWidth,
     right: 0
   });
 }
 
 function scrollC() {
   window.scrollTo({
-    top: 2.79 * window.innerWidth,
+    top: 2.99 * window.innerWidth,
     right: 0,
     behavior: "smooth",
     easing : "ease-in-out"
@@ -114,7 +112,7 @@ function scrollC() {
 
 function scrollC1() {
   window.scrollTo({
-    top: 2.79 * window.innerWidth,
+    top: 2.99 * window.innerWidth,
     right: 0
   });
 }
@@ -316,9 +314,9 @@ function closeKey() {
 
 let Hauteur = window.innerHeight;
 let Largeur = 0.97 * window.innerWidth;
-let Largeur1 = 1.77 * window.innerWidth;
-let Largeur2 = 2.77 * window.innerWidth;
-let Largeur3 = 3.77 * window.innerWidth;
+let Largeur1 = 1.97 * window.innerWidth;
+let Largeur2 = 2.97 * window.innerWidth;
+let Largeur3 = 3.97 * window.innerWidth;
 
 // console.log(viewportHeight, Largeur);
 
