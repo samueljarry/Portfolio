@@ -27,6 +27,7 @@
     </nav>
 </header>
     
+<canvas class="webgl"></canvas>
 
     <main id="slider-ext">
         <div id="slider">
@@ -126,7 +127,7 @@
 
                           <div class="divider"></div>
 
-                          <button name="answer" class="magic-hover" onclick="showPort()" >Port<span>folio</span></button>
+                          <button name="answer" class="magic-hover" onclick="showPort()" >THREE<span>.js</span></button>
 
                           <div class="divider"></div>
 
@@ -208,13 +209,15 @@
     <aside id="portfolio">
       <input class="close magic-hover" type="image" src="images/close.svg" onclick="closePort(); scrollD1();" />
       <div class="prespro">
-        <video autoplay muted preload="auto" crossorigin="anonymous" loop="loop" src="images/portfolio.mp4"></video>
+        <video autoplay muted preload="auto" crossorigin="anonymous" loop="loop" src="images/threejs.mp4"></video>
       </div>
       <article class="justification">
-        <h2>Portfolio</h2>
-        <p>Ce portfolio est encore en développement, mais a été réalisé avec du Javascript pur et 2 librairies. 
-          <br>Comme MagicMouseJS que j'ai légèrement modifié pour le curseur et ScrollRevealJS pour la version mobile du site pour l'apparition des éléments au scroll, il est disponible en Open Source ci dessous
-          <a class="no-cursor" href="https://github.com/samueljarry/Portfolio" target="_blank">Voir le repository GitHub</a>
+        <h2>THREE.js</h2>
+        <p>J'apprends à utiliser la librarie Three.js depuis peu, et maîtrise les différents types de géométries, matériaux, lumières et animations.<br>
+          Le premier projet que je met en avant est une animation qui pourrait servir de chargement d'un site web. Le deuxième utilise des polices en 3D
+          et l'utilisation qu'on peut faire de la fonction random() avec three.js.
+          <a class="no-cursor" href="https://lightintro-samueljarry.vercel.app/" target="_blank">Animation</a>
+          <a class="no-cursor" href="https://3dtext-sigma.vercel.app/" target="_blank">3D Text</a>
         </p>
       </article>
     </aside>
