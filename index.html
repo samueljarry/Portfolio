@@ -21,8 +21,7 @@
     <nav id="sidebar">
       <p onclick="scrollA()">Accueil</p>
         <p onclick="scrollD()">Dév</p>
-        <p onclick="scrollC()">CySec</p>
-        <p>OSINT</p>
+        <p onclick="scrollC()">Three.js</p>
         <a href="mailto:samueljarry.sj@gmail.com">Contact</a>
     </nav>
 </header>
@@ -67,8 +66,7 @@
                         <section id="a2">
                             <div id="aLiens">
                                 <div id="aDev"><h1 class="magic-hover" onclick="scrollD()">Dév<span class="magic-hover" onclick="scrollD()">eloppement</span></h1></div>
-                                <div id="aCs"><h1 class="magic-hover" onclick="scrollC()">Cyber<span class="magic-hover" onclick="scrollD()">sécurité</span></h1></div>
-                                <div id="aOs"><h1>OSINT</h1></div>
+                                <div id="aCs"><h1 class="magic-hover" onclick="scrollC()">Three.<span class="magic-hover" onclick="scrollD()">js</span></h1></div>
                                 <div id="aCo"><a href="mailto:samueljarry.sj@gmail.com"><h1 class="magic-hover">Contact</h1></a></div>
                             </div>
                         </section>
@@ -90,9 +88,9 @@
 
                       <section id="aP2">
                         <h2>Qui suis-<span>je ?</span></h2>
-                          <p>	Moi c’est Samuel ou Sam, je suis un étudiant en BUT MMI à l’IUT de Troyes qui voulait faire une école de cinéma avant de découvrir le développement web cette année.
-                            Avec une mère styliste, un père artiste et un grand frère actuellement en école supérieure de création digitale j’ai toujours baigné dans un environnement créatif, que j’essaie de prolonger dans le développement.
-                            Curieux et autonome de nature, je m'intéresse à d'autres domaines informatique en dehors de ma formation avec l'OSINT et la Cybersécurité.<br>
+                          <p>	Salut, moi c'est Sam (ou Samuel), je suis étudiant en première année de BUT MMI à l’IUT de Troyes qui a pour projet de devenir développeur front-end !
+                            Avec une mère styliste, un père artiste et un grand frère actuellement en école supérieure de création digitale j’ai toujours baigné dans un environnement familial assez créatif que j'essaie de prolonger.
+                            Je suis actuellement en train de me former au développement WebGL grâce à la librarie Three.js qui permet d'inclure des éléments en 3D sur des pages webs.<br>
                             <div id="reseaux">
                               <a href="https://www.linkedin.com/in/samuel-jarry-750229231/" class="magic-hover" target="_blank">
                                 <img src="images/linkedin.svg" alt="logo linkedin">
@@ -107,7 +105,7 @@
 
                     <section id="projet">
                         <section id="d1">
-                            <h3 class="secTitle">Mes projets</h3>
+                            <h3 class="secTitle">Projets sélectionnés</h3>
 
                             <svg 
                               width="300px" height="489px">
@@ -117,7 +115,7 @@
                         </section>
                         <section id="d2">
 
-                          <h3 class="secTitle">Développement Web</h3>
+                          <h3 class="secTitle">Développement Back-end / Front-End </h3>
                          
                           <button name="answer" class="magic-hover" onclick="showSource()" >La <span>source</span></button>
                           
@@ -127,15 +125,11 @@
 
                           <div class="divider"></div>
 
-                          <button name="answer" class="magic-hover" onclick="showPort()" >THREE<span>.js</span></button>
-
-                          <div class="divider"></div>
-
                         </section>
                     </section>
                     <section id="cyb">
                       <section id="cs1">
-                        <h3 class="secTitle">Mes projets</h3>
+                        <h3 class="secTitle">Projets sélectionnés</h3>
                         <svg 
                         xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -146,18 +140,16 @@
                       </section>
 
                       <section id="cs">
-                        <h3 class="secTitle">Cybersécurité</h3>
-                        <button name="answer" class="magic-hover" onclick="showThm()" >TRY<span>HACKME</span></button>
+                        <h3 class="secTitle">Three.js</h3>
+                        <button name="answer" class="magic-hover" onclick="showThm()" >Galaxie</button>
                             
                             <div class="divider" id="dev"></div>
 
-                           
-
-                          
-
-                            <button name="answer" class="magic-hover" onclick="showKey()" >Key<span>logger</span></button>
+                            <button name="answer" class="magic-hover" onclick="showKey()" >3D <span>text</span></button>
 
                             <div class="divider"></div>
+
+                            <button name="answer" class="magic-hover" onclick="showPort()" >Space Runner<span> (W.I.P)</span></button>
                       </section>
                   </section>
                   <section id="">
@@ -184,9 +176,9 @@
       
       <article class="justification">
           <h2>La Source</h2>
-          <p>La source est un site que j'ai développé entièrement pour un jeune média local, <br>
+          <p>La source est un site que j'ai développé pour un média local,
             il dispose d'un CRUD permettant la création d'articles et d'une interface administrateur intuitive pour leur gestion.
-            <br><br> La page d'accueil s'actualise automatiquement dès qu'un article est publié les classant du plus jeune au plus vieux.<br>
+            <br><br>J'ai également réalisé leurs logos et posts pour leurs réseaux sociaux<br>
             <a class="no-cursor" href="https://mmi21c10.mmi-troyes.fr/lasource/lasource.php" target="_blank">Visiter le site</a>
            </p>
       </article>
@@ -200,24 +192,22 @@
       <article class="justification">
         <h2>Eclothing</h2>
         <p>Eclothing est un site fictif qui imite une vitrine de boutique en ligne, je l'ai développé pour un projet du premier semestre du BUT MMI comme introduction aux bases de données.
-          <br>Il dispose d'un CRUD pour la gestion des articles mais aussi d'un formulaire de recherche avec 6 filtres qui fonctionnent entre eux <br> 
+          <br>Il dispose d'un CRUD pour la gestion des articles mais aussi d'un formulaire de recherche avec 6 filtres<br> 
           <a class="no-cursor" href="https://mmi21c10.sae203.ovh/index.php" target="_blank">Visiter le site</a>
          </p>
       </article>
     </aside>
 
     <aside id="portfolio">
-      <input class="close magic-hover" type="image" src="images/close.svg" onclick="closePort(); scrollD1();" />
+      <input class="close magic-hover" type="image" src="images/close.svg" onclick="closePort(); scrollC1();" />
       <div class="prespro">
-        <video autoplay muted preload="auto" crossorigin="anonymous" loop="loop" src="images/threejs.mp4"></video>
+        <video autoplay muted preload="auto" crossorigin="anonymous" loop="loop" src="images/spacerunner.mp4"></video>
       </div>
       <article class="justification">
-        <h2>THREE.js</h2>
-        <p>J'apprends à utiliser la librarie Three.js depuis peu, et maîtrise les différents types de géométries, matériaux, lumières et animations.<br>
-          Le premier projet que je met en avant est une animation qui pourrait servir de chargement d'un site web. Le deuxième utilise des polices en 3D
-          et l'utilisation qu'on peut faire de la fonction random() avec three.js.
-          <a class="no-cursor" href="https://lightintro-samueljarry.vercel.app/" target="_blank">Animation</a>
-          <a class="no-cursor" href="https://3dtext-sigma.vercel.app/" target="_blank">3D Text</a>
+        <h2>Space Runner</h2>
+        <p>Cette application web est encore en tout début de développement (je n'ai donc pas encore eu le temps de l'optimiser) ! Mais elle aura pour but de reproduire le jeu du Chrome dino (celui de la page hors connexion de google chrome avec le petit dinosaure), entièrement en 3D et dans l'espace ! <br>
+           Étant commencé la dernière semaine de mai, seuls les animations, collisions et contrôles fonctionnent.
+          <a class="no-cursor" href="https://space-runner.vercel.app/" target="_blank">Voir l'application</a>
         </p>
       </article>
     </aside>
@@ -225,13 +215,17 @@
     <aside id="thm">
       <input class="close magic-hover" type="image" src="images/close.svg" onclick="closeThm(); scrollC1();" />
       <div class="prespro">
-        <img src="images/tryhackme.png" alt="logo tryhackme">
+        <video autoplay muted preload="auto" crossorigin="anonymous" loop="loop" src="images/galaxie.mp4"></video>
       </div>
       <article class="justification">
-        <h2>TRYHACKME</h2>
-        <p>TryHackMe est une plateforme en ligne pour apprendre la cybersécurité avec des exercices pratiques, elle bénéficie d'un classement où je suis classé dans le top 2% (bientôt 1%) sur un million d'utilisateurs
-          <br> La section badge sur mon profil vous permet de voir les compétences que j'ai validé sur la plateforme
-          <a class="no-cursor" href="https://tryhackme.com/p/ERRR" target="_blank">Voir mon profil</a>
+        <h2>Galaxie</h2>
+        <p>Cette galaxie a été réalisée en Three.js en suivant la formation "Three.js journey" de Bruno Simon, que j'ai modifié en ajoutant une animation GSAP au démarrage
+          <br> 
+          <br> 
+          <br> 
+          <a class="no-cursor" href="https://galaxie.vercel.app/" target="_blank">Voir le site</a>
+          <br>
+          <a class="no-cursor" href="https://bruno-simon.com/" target="_blank">Portfolio de Bruno Simon</a>
          </p>
         </aside>
     </section>
@@ -239,12 +233,20 @@
     <aside id="keylogger">
       <input class="close magic-hover" type="image" src="images/close.svg" onclick="closeKey(); scrollC1();" />
       <div class="prespro">
-        <img src="images/keylogger.png" alt="extrait de code python">
+        <video autoplay muted preload="auto" crossorigin="anonymous" loop="loop" src="images/3dtext.mp4"></video>
       </div>
       <article class="justification">
-        <h2>Keylogger</h2>
-        <p>Un keylogger est un programme qui enregistre toutes les touches appuyées sur un clavier chronologiquement et peut être utilisé pour récupérer les identifiants d'un ordinateur infecté, je l'ai réalisé en Python avec la librarie PynPut
+        <h2>3D Text</h2>
+        <p>Cette page en Three.js utilise des textures "matcaps" pour tous les objets présents sur la scène et de la fonction native à la librairie permettant d'écrire en 3D
+          <br> J'ai essayé de la reproduire en m'inspirant de la page d'accueil du portfolio d'Ilithya en conservant l'aspect aléatoire du placement des anneaux à chaque rechargement.
+          <br>
+          <br>
+          <br>
+          <a href="https://3dtext-sigma.vercel.app/" target="_blank">Voir la page</a>
+          <br>
+          <a href="https://www.ilithya.rocks/" target="_blank">Le portfolio l'ayant inspiré</a>
          </p>
+
     </article>
   </aside>
 
