@@ -82,17 +82,17 @@ p {
     font-size: 5em;
     position: absolute;
     top: 70%;
-    width: auto;
-    height: 20%;
-    left: 15%;
+    left: calc(0% + 15px);
 }
 
 #logo h2:nth-child(2) {
+    position: absolute;
     color: black;
     font-style: normal;
     font-weight: 500;
-    left: 29.5%;
-    top: 75%;
+    left: unset;
+    right: calc(0% + 15px);
+    top: 77.5%;
 }
 
 /* ACCUEILDROITE */
@@ -107,7 +107,7 @@ p {
     position: absolute;
     left: 0vw;
     top: 100vh;
-    height: 160vh;
+    height: 200vh;
     width: 100vw;
     background-color: #e35042;
 }
@@ -180,13 +180,17 @@ p {
 }
 
 #reseaux {
-    width: 50%;
+    width: 75%;
     height: 10%;
     display: flex;
     position: absolute;
-    top: 65%;
-    left: 25%;
-    justify-content: space-around;
+    top: 85%;
+    left: 12.5%;
+    justify-content: space-between;
+}
+
+#reseaux img {
+    width: 60%;
 }
 
 #reseaux a {
@@ -194,6 +198,9 @@ p {
     color:white;
     font-size: 3em;
     width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -202,7 +209,7 @@ p {
 #projet {
     position: absolute;
     left: 0vw;
-    top: 260vh;
+    top: 300vh;
     height: 200vh;
     width: 100vw;
     background: white;
@@ -282,7 +289,7 @@ p {
 #cyb {
     position: absolute;
     left: 0;
-    top: 460vh;
+    top: 500vh;
     height: 200vh;
     width: 100vw;
     background: #e35042;
@@ -350,6 +357,10 @@ p {
     color: white;
     transition : 0.3s;
 }
+
+button.magic-hover:nth-child(6) {
+    text-align: left;
+    }
 
 #cs .divider {
     width: 90%;
@@ -650,7 +661,7 @@ and (min-width : 1224px) {
         position: absolute;
         top: 70%;
         width: auto;
-        height: 20%;
+        height: auto;
         left: 15%;
     }
 
@@ -658,8 +669,9 @@ and (min-width : 1224px) {
         color: black;
         font-style: normal;
         font-weight: 500;
-        left: 29.5%;
+        left: unset;
         top: 75%;
+        right: 30%;
     }
 
 /* ACCUEILDROITE */
@@ -812,6 +824,10 @@ and (min-width : 1224px) {
 
     #reseaux a {
         width: 20%;
+    }
+
+    #reseaux img {
+        width: 100%;
     }
 
 
@@ -1016,7 +1032,6 @@ and (min-width : 1224px) {
 
 .prespro video {
     width: 96%;
-    max-height: 100%;
 }
 
 .prespro img {
